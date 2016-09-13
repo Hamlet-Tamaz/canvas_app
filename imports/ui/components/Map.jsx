@@ -1,9 +1,15 @@
 import React from 'react'
+import Sidenav from './Sidenav.jsx'
+
 
 export default React.createClass({
   render() {
-    return (
-      <h1>This is where the map goes</h1>
-    )
+	 return (
+		<div>
+			<div>This is where the map goes</div>
+			<Sidenav />
+		</div>
+	 	)
+
   }
 })

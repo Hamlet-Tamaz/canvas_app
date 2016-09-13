@@ -9,9 +9,9 @@ import Login from '/imports/ui/components/Login'
 
 export const AppRoutes = () => (
 	<Router history={browserHistory}>
-		<Route path='app' component={App}>
+		<Route component={App}>
 			<Route path="/" component={Map}/>
-			<Route path="login" component={Login}/>
+			<Route path="/login" component={Login}/>
 		</Route>
 	</Router>
 )
