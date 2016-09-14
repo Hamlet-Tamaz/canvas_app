@@ -1,31 +1,42 @@
 import React from 'react'
+import SidenavTooltip from '/imports/ui/components/SidenavTooltip.jsx'
+import SidenavIcons from '/imports/ui/components/SidenavIcons.jsx'
 
 export default React.createClass({
-	render() {
-		let iconList = [
-		    "fa fa-database",
-		    "fa fa-user-plus",
-		    "fa fa-users",
-		    "fa fa-bicycle",
-		    "fa fa-list-ul",
-		    "fa fa-lightbulb-o",
-		    "fa fa-list-ol",
-		    "fa fa-line-chart",
-		    "fa fa-cog"
-	  	]
+	getInitialState() {
+		return {
+			showTooltip: false,
+			tooltipX: '50px',
+			tooltipY: '0px'
+		}
+	},
 
-		let list = iconList.map((item) => {
-		  return (
-		    <li key={item} className="sidenav-list-item">
-		      <i className={item}></i>
-		    </li>
-		  )
-		})
+	showTooltip(e) {
+	  this.setState({
+	    showTooltip: true,
+	    tooltipY: e.nativeEvent.target.offsetTop + 
+	      (e.nativeEvent.target.offsetHeight / 2) + "px"
+	  })
+	},
+
+	hideTooltip(e) {
+	  this.setState({
+	    showTooltip: false
+	  })
+	},
+
+	render() {
 		
 	    return (
 		  <nav className="sidenav">
+		  	<SidenavTooltip 
+		  		showTooltip={this.state.showTooltip}
+		  		tooltipX={this.state.tooltipX}
+		  		tooltipY={this.state.tooltipY}/>
 		    <ul className="sidenav-list">
-		      {list}
+		      <SidenavIcons 
+		      	showTooltip={this.showTooltip}
+		      	hideTooltip={this.hideTooltip}/>
 		    </ul>
 		  </nav>
 		)
