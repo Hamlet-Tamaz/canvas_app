@@ -185,12 +185,68 @@ p {
 
 /* Tool Bar */
 /* ================== */
-.user_profile{
-  width: 60px;
-  height:60px;
-  border-radius: 30px;
+.tool_bar{
+  position: fixed;
+  top:0;
+  background-color: black;
+  color:white;
+  width: auto;
+  height: 100%;
+  text-align: center;
 }
 
+.user_profile{
+  position: relative;
+  display: block;
+  width: 60px;
+  height:60px;
+  border: 2px solid white;
+  border-radius: 60px;
+  margin: 20px;
+  box-shadow: 1px 1px 10px white;
+}
+
+.main_area{
+  position: relative;
+  left: 200px;
+}
+
+.menu{
+  position: absolute;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  background-color: #f2f2f2;
+  height: 100%;
+  font-size: 8px;
+  color:gray;
+  font-family: arial;
+}
+
+.tool{
+  margin: 10px;
+  cursor: pointer;
+}
+
+.tools img{
+  width: 40px;
+  height: 40px;
+}
+
+.logo{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  text-align:center;
+  background-color: black;
+}
+.logo img{
+  width: 60px;
+  height: auto;
+  margin: 20px;
+}
 
 
 
