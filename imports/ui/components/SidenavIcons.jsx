@@ -2,13 +2,39 @@ import React from 'react';
 import OCsign from './OCsign.jsx'
 import AccountSign from './AccountSign.jsx'
 
+
+var HoverHandlers = {
+  mouseOver: function (e) {
+    this.setState({ hover: true });
+  },
+  mouseOut: function (e) {
+    this.setState({ hover: false });
+  },
+};  
+
+let style = {
+	'backgroundColor': ''
+}
+let hovIcon;
+
+
 export default React.createClass({
-	shouldComponentUpdate(nextProps, nextState) {
-		return nextProps.id !== this.props.id
+	// shouldComponentUpdate: function(nextProps, nextState) {
+	// 	return nextProps.id !== this.props.id
+	// },
+	getInitialState: function() {
+		return {hover: false}
 	},
-	render() {
+
+	handleHover: function(e) {
+ 		// console.log('e: ', e)
+		this.state.hover ? this.setState( {hover: false}) : this.setState({hover: true})
+
+		!this.state.hover ? style={'backgroundColor': 'black'} : style={'backgroundColor': ''}
+		hovIcon = e.target.className
+	},
+	render: function() {
 		let iconList = [
-		    // "fa fa-user",
 			<AccountSign />,
 		    "fa fa-cog",
 		    "fa fa-users",
@@ -22,6 +48,10 @@ export default React.createClass({
 		    // "fa fa-lightbulb-o",
 		    // "fa fa-list-ol",
 	  	]
+		
+		let hover = this.state.hover
+
+
 
 		let list = iconList.map((item,i) => {
 		  if (i === 0) {
@@ -34,12 +64,20 @@ export default React.createClass({
 				<li key={i}>{item}</li>
 			)
 		  }
+		  else if (item === hovIcon) {
+			return (
+			    <li key={item} style={style} className="sidenav-list-item">
+			      <a href="/test"><i onMouseOver={this.handleHover} onMouseOut={this.handleHover} className={item}></i></a>
+			    </li>
+			)
+		  }
+
 		  else {
 		  	return (
 			    <li key={item} className="sidenav-list-item">
-			      <i className={item}></i>
+			      <a href="/test"><i onMouseOver={this.handleHover} onMouseOut={this.handleHover} className={item}></i></a>
 			    </li>
-			  )
+			)
 		  }
 		})
 

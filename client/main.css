@@ -3,11 +3,29 @@
 $font-stack: 'Open Sans', sans-serif;
 $default-text-color: rgba(107,117,139,1);
 
+body {	
+/*  position: fixed; 
+  top: 0; 
+  left: 0; */
+	
+  /* Preserve aspet ratio */
+/*  min-width: 100%;
+  min-height: 100%;*/
+ /*  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;*/
+    background-size: 100% auto;
+    background-repeat: 
+
+
+}
+
 body, p, h1, h2, h3, h4, ul, li  {
   font-family: $font-stack;
   padding: 0;
   margin: 0;
 }
+
 
 p {
   color: $default-text-color;
@@ -30,15 +48,14 @@ p {
   
 
 .sidenav-list {
-  list-style-type: none;
   position: relative;
-  left: -20px;
+  /*left: -20px;*/
   }
 
 
 .sidenav-list-item {
   cursor: pointer;
-  padding-top: 20px;
+  padding-top: 60px;
   display: flex;
   opacity: 0.54;
   font-size: 3.6em;
@@ -52,6 +69,12 @@ p {
 .sidenav-list-item:first-child {
     padding-top: 20px;
 }
+
+.sidenav-list-item i {
+	position: relative;
+	bottom: 20px;
+}
+
 
 
 .sidenav-tooltip {
@@ -110,8 +133,6 @@ p {
 	height: 130px;
 	width: 130px;
 	text-align: center;
-	top: -16px;
-	left: -20px;
 }
 
 .accountSign > div{
@@ -126,4 +147,5 @@ p {
 
 .accountSign  h1 {
 	font-size: 2em;
+	margin: 20px;
 }
