@@ -1,6 +1,6 @@
 import React from 'react'
-import SidenavTooltip from '/imports/ui/components/SidenavTooltip.jsx'
-import SidenavIcons from '/imports/ui/components/SidenavIcons.jsx'
+import SidenavTooltip from './SidenavTooltip.jsx'
+import SidenavIcons from './SidenavIcons.jsx'
 
 export default React.createClass({
 	getInitialState() {
