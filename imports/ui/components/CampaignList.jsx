@@ -40,6 +40,7 @@ export default React.createClass({
 	render() {
 		return (
 			<div>
+				<Toolbar />
 				{this.renderList()}
 			</div>
 			);
