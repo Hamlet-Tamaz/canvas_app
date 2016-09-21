@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import SidenavTooltip from './SidenavTooltip.jsx'
 import SidenavIcons from './SidenavIcons.jsx'
 
-export default React.createClass({
+const Sidenav = React.createClass({
 	getInitialState() {
 		return {
 			showTooltip: false,
@@ -44,5 +44,6 @@ export default React.createClass({
 	}
 })
 
-
-ReactDOM.render(<Sidenav />, document.getElementByTagName('body'))
+// export default Sidenav
+// debugger
+// ReactDOM.render(<Sidenav />, document.getElementById('root'))
