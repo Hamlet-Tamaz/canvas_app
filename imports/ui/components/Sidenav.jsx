@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import SidenavTooltip from './SidenavTooltip.jsx'
 import SidenavIcons from './SidenavIcons.jsx'
 

@@ -5,7 +5,6 @@ export default React.createClass({
 		return(
 			<div className="user_display">
 				<img src="./charlie.png" className="user_profile"/>
-				<p>user name</p>
 			</div>
 		)
 	} 

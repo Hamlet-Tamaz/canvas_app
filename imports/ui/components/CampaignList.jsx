@@ -1,5 +1,6 @@
 import React from 'react'
 import CampBox from './CampBox.jsx'
+import Toolbar from './Toolbar.jsx'
 
 var data = [
 		{
@@ -40,7 +41,12 @@ export default React.createClass({
 	render() {
 		return (
 			<div>
-				{this.renderList()}
+				<div className="test_container">
+					<Toolbar/>
+					<div className="main_area">
+						{this.renderList()}			
+					</div>
+				</div>
 			</div>
 			);
 	}
