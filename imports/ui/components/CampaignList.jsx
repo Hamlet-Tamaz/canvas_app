@@ -41,9 +41,11 @@ export default React.createClass({
 	render() {
 		return (
 			<div>
-				<Toolbar/>
-				<div className="main_area">
-					{this.renderList()}			
+				<div className="test_container">
+					<Toolbar/>
+					<div className="main_area">
+						{this.renderList()}			
+					</div>
 				</div>
 			</div>
 			);

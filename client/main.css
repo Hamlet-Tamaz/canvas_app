@@ -159,6 +159,15 @@ p {
   margin: 20px;
 }
 
+
+/* Campaign List Page*/
+/* =======================*/
+.test_container{
+  display: flex;
+}
+
+
+
 /* Campbox */
 /* ================= */
 .campbox{
@@ -187,6 +196,7 @@ p {
 /* ================== */
 .tool_bar{
   position: fixed;
+  display: inline-block;
   top:0;
   background-color: black;
   color:white;
@@ -208,7 +218,7 @@ p {
 
 .main_area{
   position: relative;
-  left: 200px;
+  /*left: 200px;*/
 }
 
 .menu{
@@ -223,9 +233,13 @@ p {
   font-family: arial;
 }
 
-.tool{
+.tools{
   margin: 10px;
   cursor: pointer;
+}
+
+.tools:hover{
+  background-color: yellow;
 }
 
 .tools img{

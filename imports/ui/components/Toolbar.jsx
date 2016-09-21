@@ -7,6 +7,7 @@ export default React.createClass({
 		return(
 			<div className="tool_bar">
 				<User />
+
 				<div className="menu">
 					<div className="tools">
 						<img src="/settings.png"/>
@@ -25,6 +26,7 @@ export default React.createClass({
 						<p>DATA VISUAL</p>
 					</div>
 				</div>
+				
 				<Logo />
 			</div>
 		)
