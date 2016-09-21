@@ -42,7 +42,6 @@ export default React.createClass({
 			<div>
 				{this.renderList()}
 			</div>
-
 			);
 	}
 })
