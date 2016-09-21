@@ -16,6 +16,7 @@ body {
     -o-background-size: cover;*/
     background-size: 100% auto;
     background-repeat: 
+;
 
 
 }
@@ -41,8 +42,7 @@ p {
   box-shadow: 0px 0px 15px 0px #888;
   background-color: rgba(250,250,250,1);
   width: 130px;
-  height: 100%;
-  overflow: ;
+  height: 1000px;
 }
 
   
@@ -110,21 +110,30 @@ p {
 	text-align: center;
 	left: 0;
 	bottom: 0;
+
+	display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
 }
 
 .OCsign > div{
 	position: relative;
-	top: 20px;
 	background: white;
 	border-radius: 100px;
 	margin: 0 auto;
-	height: 75px;
-	width: 75px;
+	height: 80px;
+	width: 80px;
+
+   	display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
 }
 
 .OCsign h1 {
-	position: relative;
-	top: 18px
+/*	position: relative;
+	top: 18px*/
 }
 
 .accountSign {
@@ -148,4 +157,21 @@ p {
 .accountSign  h1 {
 	font-size: 2em;
 	margin: 20px;
+}
+
+.centralDiv {
+	position: relative;
+	margin: 0 auto;
+	height: 700px;
+	width: 600px;
+	
+	background-color: white;
+	border-radius: 50px;
+	text-align: center
+}
+
+#background {
+	height: 300px;
+	width: 100%;
+	background-image: url(http://cogentlegal.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-03-at-12.50.09-PM1.png)
 }
