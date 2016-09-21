@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import SidenavTooltip from './SidenavTooltip.jsx'
 import SidenavIcons from './SidenavIcons.jsx'
 
@@ -42,3 +43,6 @@ export default React.createClass({
 		)
 	}
 })
+
+
+ReactDOM.render(<Sidenav />, document.getElementByTagName('body'))

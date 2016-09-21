@@ -6,9 +6,8 @@ export default React.createClass({
 	render() {
 		return (
 			<div>
+				<Sidenav />
 				<h5>AccountSign</h5>
-				
-				<AccountSign />
 			
 
 			</div>
