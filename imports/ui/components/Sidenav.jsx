@@ -44,6 +44,6 @@ const Sidenav = React.createClass({
 	}
 })
 
-// export default Sidenav
+export default Sidenav
 // debugger
-// ReactDOM.render(<Sidenav />, document.getElementById('root'))
+// ReactDOM.render(<Sidenav />, document.body)

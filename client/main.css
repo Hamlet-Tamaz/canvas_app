@@ -156,8 +156,37 @@ p {
 
 .accountSign  h1 {
 	font-size: 2em;
-	margin: 20px;
+  margin: 20px;
 }
+
+/* Campbox */
+/* ================= */
+.campbox{
+  position: relative;
+  display: flex;
+  width: 800px;
+  height: 200px;
+  margin: 50px 20px;
+  background-color: white;
+  box-shadow: 5px 5px 5px #888888;
+  padding: 10px;
+  border:1px solid #f2f2f2;
+  /*border-radius: 5px;*/
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.campbox_img{
+  position: relative;
+  height: 100%;
+  width: auto;
+  margin-right: 10px; 
+}
+
+/* Tool Bar */
+/* ================== */
+
+
 
 .centralDiv {
 	position: relative;
@@ -175,3 +204,4 @@ p {
 	width: 100%;
 	background-image: url(http://cogentlegal.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-03-at-12.50.09-PM1.png)
 }
+

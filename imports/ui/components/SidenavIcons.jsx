@@ -25,6 +25,9 @@ export default React.createClass({
 	getInitialState: function() {
 		return {hover: false}
 	},
+	handleClick: function(e) {
+		active=e.target.className += ' active';
+	},
 
 	handleHover: function(e) {
  		// console.log('e: ', e)
@@ -67,7 +70,7 @@ export default React.createClass({
 		  else if (item === hovIcon) {
 			return (
 			    <li key={item} style={style} className="sidenav-list-item">
-			      <a href="/test"><i onMouseOver={this.handleHover} onMouseOut={this.handleHover} className={item}></i></a>
+			      <a href="/test"><i onClick={this.handleClick} onMouseOver={this.handleHover} onMouseOut={this.handleHover} className={item}></i></a>
 			    </li>
 			)
 		  }

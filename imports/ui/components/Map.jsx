@@ -1,6 +1,7 @@
 import React from 'react'
-import Sidenav from './Sidenav.jsx'
+// import Sidenav from './Sidenav.jsx'
 import CentralDiv from './CentralDiv.jsx'
+import Toolbar from './Toolbar.jsx'
 
 
 
@@ -10,11 +11,12 @@ export default React.createClass({
   		var a = 'hamlet'
 	 return (
 		<div>
+			<Toolbar />
 			<div >This is where the map goes: {a}</div>
-			<Sidenav />
 			<CentralDiv />
 		</div>
 	 	)
 
   }
 })
+			// <Sidenav />
