@@ -10,19 +10,19 @@ export default React.createClass({
 
 				<div className="menu">
 					<div className="tools">
-						<img src="/settings.png"/>
+						<img src="/settings.svg"/>
 						<p>SETTINGS</p>
 					</div>
 					<div className="tools">
-						<img src="/volunteer.png"/>
+						<img src="/volunteer.svg"/>
 						<p>MANAGE VOLUNTEER</p>
 					</div>
 					<div className="tools">
-						<img src="/dispatch.png"/>
+						<img src="/dispatch.svg"/>
 						<p>DIPATCH</p>
 					</div>
 					<div className="tools">
-						<img src="/data_visual.png"/>
+						<img src="/data_visual.svg"/>
 						<p>DATA VISUAL</p>
 					</div>
 				</div>

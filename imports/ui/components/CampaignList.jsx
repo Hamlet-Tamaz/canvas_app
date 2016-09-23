@@ -43,9 +43,7 @@ export default React.createClass({
 			<div>
 				<div className="test_container">
 					<Toolbar/>
-					<div className="main_area">
-						{this.renderList()}			
-					</div>
+					
 				</div>
 			</div>
 			);
