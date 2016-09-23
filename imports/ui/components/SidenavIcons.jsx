@@ -26,7 +26,7 @@ export default React.createClass({
 		return {hover: false}
 	},
 	handleClick: function(e) {
-		active=e.target.className += ' active';
+		active=e.target.className + ' active';
 	},
 
 	handleHover: function(e) {
