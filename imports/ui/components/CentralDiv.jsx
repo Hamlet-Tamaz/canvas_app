@@ -1,8 +1,8 @@
 import React from 'react'
 
 export default React.createClass({
-	handleClick: function() {
-		console.log('this: ', this)
+	handleClick: function(e) {
+		console.log('this: ', this, 'e: ', {...e})
 		alert('clicked!')
 	},
 

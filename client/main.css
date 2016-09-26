@@ -234,17 +234,21 @@ p {
 }
 
 .tools{
-  margin: 10px;
+  margin-top: 10px;
+  padding: 10px;
   cursor: pointer;
 }
 
-/*.tools:hover{
-  background-color: yellow;
-}*/
+.tools:hover{
+  color:#FFC857;
+  fill:currentColor;
+}
 
-.tools img{
+
+.tools svg{
   width: 40px;
   height: 40px;
+  fill:currentColor;
 }
 
 .logo{
@@ -263,7 +267,9 @@ p {
 }
 
 
-
+.activeTab {
+  background-color: black;
+}
 
 
 
