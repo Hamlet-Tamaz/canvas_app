@@ -8,7 +8,7 @@ export default React.createClass({
 	render() {
 		return (
 			<div className='logo' onClick={this.handleClick}>
-				<img src="/logo.png"/>
+				<img src="images/logo.png"/>
 			</div>
 		)
 	}
