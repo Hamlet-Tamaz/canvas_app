@@ -8,13 +8,7 @@ import {AppRoutes} from '/imports/startup/client/router.jsx'
 
 Meteor.startup(() => {
 
-  render(  	
-
-  	AppRoutes(), document.getElementById('app')
-
-  );
-
-  debugger
+  render(AppRoutes(), document.getElementById('app'));
 
 });
  

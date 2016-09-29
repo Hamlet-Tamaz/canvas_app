@@ -2,6 +2,7 @@ import React from 'react'
 import Sidenav from './Sidenav.jsx'
 import CentralDiv from './CentralDiv.jsx'
 import Toolbar from './Toolbar.jsx'
+import CampBox from './CampBox.jsx'
 
 
 
@@ -13,19 +14,33 @@ export default React.createClass({
 	// });	
 	// debugger
  //  },
+	
+	getInitialState: function() {
+		return {
+			title:'Campaign Title',
+			text:'A short description goes here'
+		}
+	},
 
-
+	
   render: function() {
 
-	var a = 'hamlet'
+	var CB_style = {
+		margin: '0 auto',
+		marginTop: '13px',
+		marginBottom: '13px'
+
+	}
 	// var map;
 
 	return (
 			// <div id='map'></div>
 		<div>
-			
+
 			<Toolbar /> 
-			<div >This is where the map goes: {a}</div>
+			
+			<CampBox title={this.state.title} text={this.state.text} img={this.state.img} style={CB_style} />
+
 			<CentralDiv />
 		</div>
 	)

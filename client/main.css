@@ -50,6 +50,7 @@ z-index: 1;
   top: 0px;
   border: solid 3px black;
   z-index: -1;
+  left: 100px;
 }
 
 
@@ -203,6 +204,14 @@ z-index: 1;
   font-size: 12px;
 }
 
+.campbox, div {
+  margin: 0 auto;
+}
+
+.campbox> div> h1 {
+  text-align: center;
+}
+
 .campbox_img{
   position: relative;
   height: 100%;
@@ -221,6 +230,7 @@ z-index: 1;
   width: auto;
   height: 100%;
   text-align: center;
+  z-index: 10;
 }
 
 .user_profile{
@@ -303,17 +313,13 @@ z-index: 1;
 	margin: 0 auto;
 	height: 700px;
 	width: 600px;
-	
-	background-color: yellow;
 	border-radius: 50px;
-	text-align: center
+	text-align: center;
+  background-color: whitesmoke;
+  opacity: .87;
+  padding: 50px;
 }
 
-#background {
-	height: 300px;
-	width: 100%;
-	background-image: url(http://cogentlegal.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-03-at-12.50.09-PM1.png)
-}
 
 
 

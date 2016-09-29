@@ -7,26 +7,14 @@ export default React.createClass({
   },
   
   componentDidMount() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 37.7749, lng: -122.4194},
+    zoom: 12
   }); 
-  debugger
   },
 
 
-  render() {
-    
-    var map;
-
-    // function initMap() {
-    //   map = new google.maps.Map(document.getElementById('map1'), {
-    //     center: {lat: -34.397, lng: 150.644},
-    //     zoom: 8
-    //   }); 
-    // }
-      // debugger
-    
+  render() {   
     return (
       <div>
         <div id="map"></div>
